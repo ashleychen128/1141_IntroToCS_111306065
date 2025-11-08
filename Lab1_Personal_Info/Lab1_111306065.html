@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 30px auto;
+      border: 1px solid #333;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      vertical-align: top;
+    }
+    th {
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    img {
+      display: block;
+      margin: 10px auto;
+      width: 150px;
+      border-radius: 10px;
+    }
+    input, select, textarea {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    textarea {
+      width: 90%;
+    }
+    h2 {
+      text-align: center;
+      color: #444;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .button-row {
+      text-align: left;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>This is ME!</h2>
+  <table>
+    <tr>
+      <th colspan="3">My Profile</th>
+    </tr>
+    <tr>    
+      <td rowspan="3" style="text-align:center;">
+        <img src="IMG_9079.JPG" alt="personal photo">
+        <p>陳君加</p>
+      </td>
+      <td colspan="2" style="padding-right: 30px;">
+        Name: <input type="text" name="name" placeholder="Your name here"><br><br>
+        Gender:
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Other</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        County:
+        <select>
+          <option>Taipei</option>
+          <option>Tainan</option>
+          <option>Taichung</option>
+          <option>Taoyuan</option>
+        </select>
+      </td>
+      <td>
+        Birthday: <input type="date" name="birthday">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        E-mail: <input type="email" name="email" placeholder="example@mail.com">
+      </td>
+    </tr>
+    <tr>
+      <th>Hobby</th>
+      <td colspan="2">
+        <label><input type="checkbox"> Baking</label>
+        <label><input type="checkbox"> Volleyball</label>
+        <label><input type="checkbox"> Movie</label>
+        <label><input type="checkbox"> Game</label>
+        <label><input type="checkbox"> Sleep</label>
+      </td>
+    </tr>
+    <tr>
+      <th>Skill</th>
+      <td colspan="2">
+        <label><input type="checkbox"> Java</label>
+        <label><input type="checkbox"> HTML</label>
+        <label><input type="checkbox"> Python</label>
+        <label><input type="checkbox"> Microsoft Office</label>
+      </td>
+    </tr>
+    <tr>
+      <th>Say something</th>
+      <td colspan="2">
+        <textarea rows="4" placeholder="Say something here."></textarea>
+      </td>
+    </tr>
+    <tr class="button-row">
+      <td colspan="3">
+        <button type="submit">提交</button>
+        <button type="reset">重設</button>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
