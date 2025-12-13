@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - Grade Statistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Grade Statistics</h1>
+
+        <div class="input-group">
+            <label for="mathInput">Math:</label>
+            <input type="number" id="mathInput" placeholder="Math">
+            
+            <label for="englishInput">English:</label>
+            <input type="number" id="englishInput" placeholder="English">
+            
+            <button id="submitBtn">Submit</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Math</th>
+                    <th>English</th>
+                    <th>Average</th>
+                </tr>
+            </thead>
+            <tbody id="gradeTableBody">
+                </tbody>
+            <tfoot>
+                <tr>
+                    <th>Average</th>
+                    <td id="mathAvg">0.00</td>
+                    <td id="englishAvg">0.00</td>
+                    <td id="overallAvg">0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
